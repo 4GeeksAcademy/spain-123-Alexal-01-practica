@@ -25,6 +25,7 @@ else:
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 MIGRATE = Migrate(app, db, compare_type=True)
 db.init_app(app)
+
 # Others Configurations
 setup_admin(app)  # Add the admin
 setup_commands(app)  # Add the admin
